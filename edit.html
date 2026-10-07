@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Obat - Katalog Farmasi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>Klinik Rawat Jalan</h1>
+            <p>Modul Katalog Farmasi</p>
+        </header>
+
+        <div class="content">
+
+            <a href="index.html" class="back-link">← Kembali ke Katalog</a>
+
+            <div class="page-title">
+                <h2>Edit Data Obat</h2>
+                <p>Ubah informasi obat yang ingin diperbarui.</p>
+            </div>
+
+            <form class="form-card">
+
+                <div class="form-group full">
+                    <label for="nama-obat">Nama Obat</label>
+                    <input 
+                        type="text"
+                        id="nama-obat"
+                        value="Paracetamol 500mg"
+                    >
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="kategori">Kategori Obat</label>
+
+                        <select id="kategori">
+                            <option>Analgesik</option>
+                            <option>Antibiotik</option>
+                            <option>Vitamin</option>
+                            <option>Antipiretik</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sediaan">Sediaan</label>
+                        <input 
+                            type="text"
+                            id="sediaan"
+                            value="Tablet"
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="pabrikan">Pabrikan</label>
+                        <input 
+                            type="text"
+                            id="pabrikan"
+                            value="Kimia Farma"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="stok">Stok</label>
+                        <input 
+                            type="number"
+                            id="stok"
+                            value="150"
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-group full">
+                    <label for="harga">Harga</label>
+                    <input 
+                        type="number"
+                        id="harga"
+                        value="5000"
+                    >
+                </div>
+
+                <div class="form-action">
+                    <a href="index.html" class="btn-batal">Batal</a>
+                    <button type="submit" class="btn-simpan">
+                        Simpan Perubahan
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

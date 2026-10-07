@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Farmasi - Klinik Rawat Jalan</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>Katalog Farmasi</h1>
+            <p>Sistem Informasi Klinik Rawat Jalan</p>
+        </header>
+
+        <div class="content">
+
+            <div class="section-title">
+                <div>
+                    <h2>Data Obat</h2>
+                    <p>Daftar obat yang tersedia di klinik</p>
+                </div>
+
+                <a href="tambah.php" class="btn-tambah">+ Tambah Obat</a>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Obat</th>
+                            <th>Kategori</th>
+                            <th>Sediaan</th>
+                            <th>Pabrikan</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Paracetamol 500mg</td>
+                            <td>Analgesik</td>
+                            <td>Tablet</td>
+                            <td>Kimia Farma</td>
+                            <td>
+                                <a href="edit.html" class="btn-edit">Edit</a>
+                                <button class="btn-hapus" onclick="return confirm('Yakin ingin menghapus data obat ini?')">Hapus</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Amoxicillin 250mg</td>
+                            <td>Antibiotik</td>
+                            <td>Kapsul</td>
+                            <td>Kalbe Farma</td>
+                            <td>
+                                <a href="edit.html" class="btn-edit">Edit</a>
+                                <button class="btn-hapus" onclick="return confirm('Yakin ingin menghapus data obat ini?')">Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
